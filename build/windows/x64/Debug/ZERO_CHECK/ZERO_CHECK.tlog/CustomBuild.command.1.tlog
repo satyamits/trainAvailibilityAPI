@@ -1,0 +1,10 @@
+^C:\USERS\HP\DOWNLOADS\FUT\TRAIN_APP\BUILD\WINDOWS\CMAKEFILES\78E53321B7268563F4BC94008A940B1A\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/hp/Downloads/Fut/train_app/windows -BC:/Users/hp/Downloads/Fut/train_app/build/windows --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/hp/Downloads/Fut/train_app/build/windows/train_app.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
